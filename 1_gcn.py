@@ -130,7 +130,7 @@ g, features, labels, train_mask, test_mask = load_cora_data()
 g.add_edges(g.nodes(), g.nodes())
 optimizer = th.optim.Adam(net.parameters(), lr=1e-2)
 dur = []
-for epoch in range(50):
+for epoch in range(100):
     if epoch >=3:
         t0 = time.time()
 
